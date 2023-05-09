@@ -1,0 +1,89 @@
+:root {
+  --theme: white;
+  --theme2: black;
+  --theme3: white;
+}
+
+body {
+  background-color: olive;
+}
+
+.all {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-and-count {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--theme2);
+  border: 10px double gold;
+  border-radius: 25px;
+}
+
+.buttons-and-count button {
+  background-color: var(--theme3);
+  font-size: 5rem;
+  width: clamp(200px, 30%, 300px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.buttons-and-count span {
+  font-size: 5rem;
+}
+
+.count {
+  color: var(--theme);
+}
+
+.color-inputs {
+  margin-top: 50px;
+  font-size: clamp(.75rem, 2dvw, 1.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  
+}
+
+.color-inputs label {
+  width: 100%;
+  aspect-ratio: 1;
+  color: rgb(187, 206, 205);
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.color-inputs input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: clamp(50px, 10dvw, 200px);
+  border: 5px dashed black;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.color-inputs input::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  content: 'click me';
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background-color: transparent;
+}
