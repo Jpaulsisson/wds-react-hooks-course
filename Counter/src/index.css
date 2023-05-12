@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 :root {
   --theme: #a2e2dd;
   --theme2: #a7998b;
@@ -10,6 +12,7 @@
 
 body {
   background-color: rgba(227, 253, 253, 0.602);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .all {
@@ -45,7 +48,7 @@ body {
 
 .buttons-and-count span {
   font-size: 7rem;
-  -webkit-text-stroke: 1.5px var(--btn-font-color1);
+  -webkit-text-stroke: 1.5px var(--btn-font-color2);
 }
 
 .count {
@@ -79,6 +82,7 @@ input[type=number]::placeholder {
 
 .interval-setter label {
   font-size: 2rem;
+  -webkit-text-stroke: .75px var(--btn-font-color2);
 }
 
 .color-inputs {
@@ -114,22 +118,26 @@ input[type=number]::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
   width: 100%;
   height: clamp(50px ,20vmin, 250px);
-  border: 5px dashed black;
-  border-radius: 5%;
+  border: 1px solid white;
   overflow: hidden;
 }
 
 .theme-1 {
   color: var(--btn-font-color1);
+  box-shadow: 0 0 3vh var(--theme);
+  background-color: var(--theme);
 }
 .theme-2 {
   color: var(--btn-font-color2);
+  box-shadow: 0 0 3vh var(--theme2);
+  background-color: var(--theme2);
 }
 .theme-3 {
   color: var(--btn-font-color3);
+  box-shadow: 0 0 3vh var(--theme3);  
+  background-color: var(--theme3);
 }
 
 .color-inputs input::after {
@@ -152,7 +160,7 @@ h2 {
   padding: 3rem;
   color: var(--btn-font-color2);
   background-color: var(--theme2);
-  -webkit-text-stroke: 1.5px var(--btn-font-color1);
+  -webkit-text-stroke: 1.5px var(--btn-font-color2);
 }
 
 .window-width {
