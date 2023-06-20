@@ -62,8 +62,9 @@ body {
   align-items: center;
   justify-items: center;
   row-gap: 20px;
-  margin: 10px auto;
+  margin: 3vh auto;
   border: 10px double goldenrod;
+  border-radius: 20px;
   padding: 1rem;
   color: var(--theme);
   background-color: var(--theme2);
@@ -88,6 +89,7 @@ input[type=number]::placeholder {
 .color-inputs {
   margin: 50px auto;
   width: 80%;
+  aspect-ratio: 16 / 5;
   font-size: clamp(.75rem, 2dvw, 1.5rem);
   display: grid;
   grid-template-columns: repeat(3, 30%);
@@ -121,6 +123,7 @@ input[type=number]::placeholder {
   width: 100%;
   height: clamp(50px ,20vmin, 250px);
   border: 1px solid white;
+  border-radius: 10px;
   overflow: hidden;
 }
 
